@@ -51,6 +51,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .the-product {
@@ -66,6 +67,7 @@ body {
 
 #email-section h2 {
     margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 15px;
 }
 
@@ -116,6 +118,7 @@ h2 {
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
 }
 
 #video {
@@ -127,8 +130,8 @@ h2 {
     gap: 20px;
 }
 
-.coffe-list {
-    max-width: 33%;
+.coffee-list {
+    width: 33%;
 }
 
 .product-image product1 {
@@ -157,6 +160,7 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
+    aspect-ratio: 4/2.65;
 }
 
 .inner-card {
@@ -179,12 +183,12 @@ h2 {
 }
 
 .main-price {
-    margin-right: 0;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: green;
     display: flex;
     align-items: center;
+    margin: 5px auto;
 }
 
 .add {
@@ -229,7 +233,7 @@ h2 {
         flex-direction: column;
     }
 
-    .coffe-list {
-        max-width: 100%;
+    .coffee-list {
+        width: 100%;
     }
 }

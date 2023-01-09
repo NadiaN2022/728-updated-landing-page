@@ -4,13 +4,16 @@
     --pale: hsl(32, 37, 92%);
 
 }
+
 * {
     margin: 0;
     scroll-behavior: smooth;
 }
+
 body {
     background-color: antiquewhite;
 }
+
 #header-img {
     width: 60px;
     object-fit: contain;
@@ -27,27 +30,29 @@ body {
     background-color: rgb(248, 227, 177);
     padding: 10px;
 }
-    
+
 .nav-links {
     display: flex;
+    justify-content: space-around;
     list-style: none;
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
+    width: 60%;
+    padding: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
     padding: 0 10px;
-
-
 }
 
 .logo-container {
     display: flex;
     align-items: center;
 }
+
 .the-product {
     font-size: 25px;
     margin-left: 10px;
@@ -65,11 +70,11 @@ input {
     border: 1px solid var (--green);
 }
 
-    #submit {
-        background-color: rgb(156, 207, 156);
-        color: black;
-        cursor: pointer;
-    }
+#submit {
+    background-color: rgb(156, 207, 156);
+    color: black;
+    cursor: pointer;
+}
 
 section::before {
     display: block;
@@ -80,24 +85,28 @@ section::before {
     pointer-events: none;
 }
 
-    section {
-        margin: 40px 20px;
-        text-align: center;
+section {
+    margin: 40px 20px;
+    text-align: center;
 
-    }
-    h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-    }
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
 .icon {
     color: rgb(144, 211, 144);
     margin-right: 30px;
-} 
- #features {
-text-align: left;
-max-width: 800px;
-margin: auto;
 }
+
+#features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
 .feature {
     display: flex;
     align-items: center;
@@ -105,15 +114,17 @@ margin: auto;
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #video {
     width: 100%;
 }
+
 .menu-items {
     flex-direction: flex;
 
 }
 
-.product-image product1{
+.product-image product1 {
     width: 100%;
     margin: auto;
     height: 500px;
@@ -132,7 +143,7 @@ margin: auto;
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
-    
+
 }
 
 .frappuccino-image {
@@ -142,23 +153,27 @@ margin: auto;
     border-radius: 10px 10px 0 0;
 
 }
+
 .inner-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
 }
+
 .content {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
     margin-bottom: 10px;
 }
+
 .flex {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 
 }
+
 .main-price {
     margin-right: 20px;
     font-size: 30px;
@@ -167,6 +182,7 @@ margin: auto;
     display: flex;
     align-items: center;
 }
+
 .add {
     color: var(--white);
     background-color: rgb(160, 189, 117);
@@ -180,18 +196,28 @@ margin: auto;
     font-weight: 700;
     margin-bottom: 10px;
 }
+
 .button-text {
     align-items: center;
     font-size: 15px;
 }
+
 .latte-image {
     width: 300px;
     height: 250px;
     text-align: center;
     border-radius: 10px 10px 0 0;
 
-.americano-coffee-image {
-  width: 300px;
- height: 250px;
- text-align: :right;
-border-radius: 10px 10px 0 0;
+    .americano-coffee-image {
+        width: 300px;
+        height: 250px;
+        text-align: :right;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        width: 100%;
+    }
+}

@@ -64,7 +64,7 @@ body {
     margin-top: 100px;
 }
 
-#email-section h2{
+#email-section h2 {
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -123,8 +123,12 @@ h2 {
 }
 
 .menu-items {
-    flex-direction: flex;
+    display: flex;
+    gap: 20px;
+}
 
+.coffe-list {
+    max-width: 33%;
 }
 
 .product-image product1 {
@@ -150,11 +154,9 @@ h2 {
 }
 
 .frappuccino-image {
-    width: 300px;
-    height: 250px;
-    text-align: left;
+    width: 100%;
+    height: auto;
     border-radius: 10px 10px 0 0;
-
 }
 
 .inner-card {
@@ -174,11 +176,10 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
 }
 
 .main-price {
-    margin-right: 20px;
+    margin-right: 0;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: green;
@@ -197,7 +198,7 @@ h2 {
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin: 5px auto;
 }
 
 .button-text {
@@ -206,21 +207,29 @@ h2 {
 }
 
 .latte-image {
-    width: 300px;
-    height: 250px;
-    text-align: center;
+    width: 100%;
+    height: auto;
     border-radius: 10px 10px 0 0;
-
-    .americano-coffee-image {
-        width: 300px;
-        height: 250px;
-        text-align: :right;
-        border-radius: 10px 10px 0 0;
-    }
 }
+
+.americano-coffee-image {
+    width: 100%;
+    height: auto;
+    text-align: :right;
+    border-radius: 10px 10px 0 0;
+}
+
 
 @media only screen and (max-width: 600px) {
     .nav-links {
         width: 100%;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .coffe-list {
+        max-width: 100%;
     }
 }

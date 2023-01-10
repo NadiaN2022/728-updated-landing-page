@@ -122,7 +122,11 @@ h2 {
 }
 
 #video {
+    aspect-ratio: 16/9;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
 }
 
 .menu-items {
@@ -224,7 +228,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .nav-links {
         width: 100%;
     }
